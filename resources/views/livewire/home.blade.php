@@ -1,12 +1,12 @@
-<div>
+<div class="pb-20">
     <!-- Section Hero -->
     <section class="p-10 bg-teal-400">
-        <div class="flex flex-col md:flex-row gap-8 md:4">
-            <div class="basis-1/2 space-y-6 text-white">
-                <div class="text-4xl md:text-6xl font-bold">
+        <div class="flex flex-col md:flex-row gap-8">
+            <div class="basis-2/3 space-y-6 text-white">
+                <div class="text-4xl md:text-6xl font-bold leading-tight">
                     <p>Buat Undangan Online Digital Website Untuk </p>
 
-                    <p>Pernikahan</p>
+                    <p class="text-amber-200">Pernikahan</p>
                 </div>
 
                 <p class="text-base md:text-lg">Buat undangan online digital website custom dengan Satu Momen, meski kamu gaptek tetap bisa bikin undangan website sendiri dari smart phone. Cukup pilih tema, edit detail acara, upload foto, semua bisa selesai dalam hitungan menit.</p>
@@ -30,8 +30,22 @@
                 </div>
             </div>
             
-            <div class="w-full md:w-1/3 mx-auto self-center ">
+            <div class="w-full md:w-1/2 mx-auto self-center ">
                 <img src="{{ asset('images/aplikasi-undangan-digital-website.webp') }}" alt="undangan">
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-10 p-2">
+        <div class="flex flex-col md:flex-row gap-6">
+            <div class="basis-1/2">
+                <img class="md:w-3/4 mx-auto" src="{{ asset('images/reseller-undangan-digital-website-2.webp') }}" alt="Gambar 10 Menit Undangan Jadi">
+            </div>
+
+            <div class="basis-1/2 self-center px-5 md:pe-48 space-y-8 text-3xl md:text-4xl leading-tight text-gray-800">
+                <p class="font-bold">Buat Undangan Online Digital Website 10 Menit Cukup Pake HP Aja</p>
+
+                <p class="text-base">Buat undangan website praktis dan nyaman. Tanpa harus didepan laptop berjam-jam. Cukup pilih tema, edit detail acara, upload foto, semua bisa selesai dalam hitungan menit.</p>
             </div>
         </div>
     </section>

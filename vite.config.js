@@ -13,7 +13,7 @@ export default defineConfig({
     ],
 
     server : {
-        host : '192.168.0.104',
+        host : '192.168.43.185',
         port : '5173',
     }
 });
