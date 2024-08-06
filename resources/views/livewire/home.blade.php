@@ -39,36 +39,6 @@
 
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-800 md:bg-gray-100 border-gray-700  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-                    <li class="mb-2 flex flex-col jutify-start gap-2 block md:hidden">
-                        <div>
-                            <a href="{{ route('login') }}">
-                                <button type="button" class="inline-flex items-center justify-center gap-1 px-5 py-2.5 me-0 md:me-2 text-sm font-medium text-center rounded-lg text-white drop-shadow-md bg-teal-400 hover:bg-teal-500 focus:ring-4 focus:outline-none focus:ring-teal-400">
-                                    Masuk
-                
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
-                                    </svg>                      
-                                </button>
-                            </a>
-                        </div>
-                        
-                        <div>
-                            <a href="{{ route('register') }}">
-                                <button type="button" class="inline-flex items-center justify-center px-5 py-2.5 me-0 md:me-2 text-sm font-medium text-center rounded-lg text-white drop-shadow-md bg-gray-600 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-500">
-                                    Daftar & Coba Gratis
-                
-                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                    </svg>
-                                </button>
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="md:hidden">
-                        <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
-                    </li>
-                    
                     <li>
                         <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:text-blue-500" aria-current="page">Home</a>
                     </li>
@@ -83,6 +53,36 @@
 
                     <li>
                         <a href="#" class="block py-2 px-3 text-gray-100 md:text-gray-900 md:hover:text-gray-600 md:p-0">Contact</a>
+                    </li>
+
+                    <li class="md:hidden">
+                        <hr class="h-px my-4 bg-gray-200 border-0 dark:bg-gray-700">
+                    </li>
+
+                    <li class="mb-2 flex flex-col gap-3 block md:hidden">
+                        <div>
+                            <a href="{{ route('login') }}">
+                                <button type="button" class="inline-flex items-center justify-center gap-1 w-full px-5 py-3 me-0 md:me-2 text-sm font-medium text-center rounded-lg text-white drop-shadow-md bg-teal-400 hover:bg-teal-500 focus:ring-4 focus:outline-none focus:ring-teal-400">
+                                    Masuk
+                
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
+                                    </svg>                      
+                                </button>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="{{ route('register') }}">
+                                <button type="button" class="inline-flex items-center justify-center w-full px-5 py-3 me-0 md:me-2 text-sm font-medium text-center rounded-lg text-white drop-shadow-md bg-gray-600 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-500">
+                                    Daftar & Coba Gratis
+                
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                    </svg>
+                                </button>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
