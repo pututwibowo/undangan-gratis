@@ -2,12 +2,9 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Livewire;
 
-Route::get('/', Livewire\Home::class);
-
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/', function () {
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
