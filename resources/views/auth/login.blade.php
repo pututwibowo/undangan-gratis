@@ -2,6 +2,11 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <div class="mb-4 space-y-2">
+        <h1 class="text-4xl text-center font-bold">Masuk</h1>
+        <p class="text-gray-500">Masukkan E-Mail beserta kata sandi yang sudah terdaftar di SatuMomen</p>
+    </div>
+
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
@@ -32,16 +37,20 @@
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
+        <x-primary-button class="w-full mt-4 py-3 justify-center">
+            {{ __('Log in') }}
+        </x-primary-button>
+
+        <div class="flex items-center justify-between mt-4">
             @if (Route::has('password.request'))
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
+                    {{ __('Lupa password?') }}
                 </a>
             @endif
 
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
+            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('register') }}">
+                Belum punya akun?
+            </a>
         </div>
     </form>
 </x-guest-layout>
