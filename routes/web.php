@@ -9,7 +9,7 @@ Route::get('/', function () {
 
 Route::get('/tema', function () {
     return view('themes');
-});
+})->name('tema');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
