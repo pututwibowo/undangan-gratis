@@ -94,7 +94,7 @@
         </ol>
     </nav>
 
-    <div class="grid grid-cols-4 gap-4 mb-10 pt-20 px-32">
+    <div class="grid grid-cols-4 gap-4 mb-6 pt-20 px-32">
         @foreach ( $dataDB as $data)            
             <x-card 
                 :img="$data['img']"
@@ -104,7 +104,7 @@
         @endforeach
     </div>
 
-    <div class="flex flex-col items-center mb-5">
+    <div class="flex flex-col items-center mb-8">
         <!-- Help text -->
         <span class="text-sm text-gray-600 ">
             Showing <span class="font-semibold text-gray-900">1</span> to <span class="font-semibold text-gray-900">10</span> of <span class="font-semibold text-gray-900">100</span> Entries
@@ -129,8 +129,4 @@
             </button>
         </div>
     </div>
-
-    <footer class="py-20">
-
-    </footer>
 </x-home-layout>
