@@ -3,7 +3,7 @@
         [
             'img' => 'https://flowbite.com/docs/images/blog/image-1.jpg',
             'title' => 'Dayak Toraja',
-            'category' => 'Wedding & Engagement',
+            'category' => 'Wedding & Engagement & Putut Wibowo',
         ],
         [
             'img' => 'https://flowbite.com/docs/images/blog/image-2.jpg',
@@ -44,7 +44,7 @@
 @endphp
 
 <x-home-layout>
-    <section class="px-32 pt-32 bg-teal-500 overflow-hidden">    
+    <section class="px-4 md:px-32 pt-32 bg-teal-500 overflow-hidden">    
         <div class="flex flex-col md:flex-row gap-8">
             <div class="basis-2/3 space-y-6 text-white">
                 <div class="text-4xl md:text-6xl font-bold leading-tight">
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <nav class="flex px-32 py-3 bg-gray-200" aria-label="Breadcrumb">
+    <nav class="flex ps-3 md:ps-32 py-3 bg-gray-200" aria-label="Breadcrumb">
         <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
             <li class="inline-flex items-center">
                 <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
@@ -94,9 +94,10 @@
         </ol>
     </nav>
 
-    <div class="grid grid-cols-4 gap-4 mb-6 pt-20 px-32">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 pt-4 md:pt-20 px-3 md:px-32">
         @foreach ( $dataDB as $data)            
             <x-card 
+                class="grid grid-rows-subgrid row-span-3 "
                 :img="$data['img']"
                 :title="$data['title']"
                 :category="$data['category']"

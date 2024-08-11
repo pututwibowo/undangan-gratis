@@ -52,19 +52,11 @@
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-800 md:bg-gray-100 border-gray-700  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                             <li>
-                                <a href="/" class="block py-2 px-3 bg-blue-700 rounded md:bg-transparent md:p-0 {{ Request::is('/')?'md:text-blue-700':'md:text-gray-900 md:hover:text-gray-600' }}" aria-current="page">Home</a>
+                                <a href="/" class="block py-2 px-3 md:p-0 rounded text-gray-100 md:bg-transparent  {{ Request::is('/') ? 'bg-blue-700 md:text-blue-700' : 'md:text-gray-900 md:hover:text-gray-600' }}" aria-current="page">Home</a>
                             </li>
         
                             <li>
-                                <a href="{{ route('tema') }}" class="block py-2 px-3 md:p-0 {{ Request::is('tema')?'md:text-blue-700':'md:text-gray-900 md:hover:text-gray-600' }}">Tema</a>
-                            </li>
-        
-                            <li>
-                                <a href="#" class="block py-2 px-3 text-gray-100 md:text-gray-900 md:hover:text-gray-600 md:p-0">Services</a>
-                            </li>
-        
-                            <li>
-                                <a href="#" class="block py-2 px-3 text-gray-100 md:text-gray-900 md:hover:text-gray-600 md:p-0">Contact</a>
+                                <a href="{{ route('tema') }}" class="block py-2 px-3 md:p-0 rounded text-gray-100 md:bg-transparent {{ Request::is('tema')?'bg-blue-700 md:text-blue-700':'md:text-gray-900 md:hover:text-gray-600' }}">Tema</a>
                             </li>
         
                             <li class="md:hidden">
@@ -106,27 +98,28 @@
             </main>
 
             <footer class="bg-gray-200">
-                <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                  <span class="text-sm text-gray-500 sm:text-center">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
-                </span>
-                <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Contact</a>
-                    </li>
-                </ul>
+                <div class="w-full mx-auto max-w-screen-xl p-4 flex flex-col items-center md:flex-row md:items-center md:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center">
+                        © 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+                    </span>
+
+                    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </footer>
         </div>
-
 
         @livewireScripts
     </body>
