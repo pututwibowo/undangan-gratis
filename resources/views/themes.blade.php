@@ -3,7 +3,7 @@
         [
             'img' => 'https://flowbite.com/docs/images/blog/image-1.jpg',
             'title' => 'Dayak Toraja',
-            'category' => 'Wedding & Engagement & Putut Wibowo',
+            'category' => 'Wedding & Engagement',
         ],
         [
             'img' => 'https://flowbite.com/docs/images/blog/image-2.jpg',
@@ -94,7 +94,7 @@
         </ol>
     </nav>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 pt-4 md:pt-20 px-3 md:px-32">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 pt-8 md:pt-20 px-3 md:px-32">
         @foreach ( $dataDB as $data)            
             <x-card 
                 class="grid grid-rows-subgrid row-span-3 "
