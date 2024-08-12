@@ -15,19 +15,23 @@
 
         @livewireStyles
     </head>
-    <body class="font-sans antialiased w-full">
-        <div class=" bg-gray-900">
-            <!-- Page Content -->
-            <main class="flex flex-col h-svh">
-                <div class="grow p-2">
-                    {{ $slot }}
-                </div>
+    <body class="font-sans antialiased w-full bg-gray-900 md:mt-2">
+        <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 md:border-[14px] md:rounded-[2.5rem] md:h-[600px] md:w-[300px]">
+            <div class="hidden md:block h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+            <div class="hidden md:block h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div class="hidden md:block h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div class="hidden md:block h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div class="relative md:rounded-[2rem] overflow-hidden md:w-[272px] h-svh md:h-[572px] bg-white dark:bg-gray-900">
+                <!-- Page Content -->
+                <main class="absolute flex flex-col h-full w-full pb-16">
+                        {{ $slot }}
+                </main>
 
                 <!-- Page Bottom Navigation -->
                 @persist('navigation')
-                    <x-bottom-navigation class="w-full h-16">
+                    <x-bottom-navigation class="absolute bottom-0 w-full h-16">
                         <x-slot:container>
-                            <x-bottom-navigation.slide class="grid grid-cols-4 h-full max-w-lg  px-16">
+                            <x-bottom-navigation.slide class="grid grid-cols-4 h-full max-w-lg  px-16 md:px-10">
                                 <a wire:navigate href="{{ route('monocrome.preview') . '/salam' }}">
                                     <x-bottom-navigation.icon text="Salam">
                                         <path fill-rule="evenodd" d="M11 4.717c-2.286-.58-4.16-.756-7.045-.71A1.99 1.99 0 0 0 2 6v11c0 1.133.934 2.022 2.044 2.007 2.759-.038 4.5.16 6.956.791V4.717Zm2 15.081c2.456-.631 4.198-.829 6.956-.791A2.013 2.013 0 0 0 22 16.999V6a1.99 1.99 0 0 0-1.955-1.993c-2.885-.046-4.76.13-7.045.71v15.081Z" clip-rule="evenodd"/> 
@@ -55,7 +59,7 @@
                                 </a>
                             </x-bottom-navigation.slide>
                     
-                            <x-bottom-navigation.slide class="grid grid-cols-4 h-full max-w-lg  px-16">
+                            <x-bottom-navigation.slide class="grid grid-cols-4 h-full max-w-lg  px-16 md:px-10">
                                 <a wire:navigate href="{{ route('monocrome.preview') . '/quote' }}">
                                     <x-bottom-navigation.icon text="Quote">
                                         <path fill-rule="evenodd" d="M6 6a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3H5a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2H6Zm9 0a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a3 3 0 0 1-3 3h-1a1 1 0 1 0 0 2h1a5 5 0 0 0 5-5V8a2 2 0 0 0-2-2h-3Z" clip-rule="evenodd"/>
@@ -77,22 +81,21 @@
                         </x-slot>
 
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev absolute bottom-1/4 left-4 z-10 p-2 rounded-full">
-                            <svg class="w-5 h-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <div class="swiper-button-prev absolute bottom-1/4 left-4 md:left-2 z-10 p-2 rounded-full">
+                            <svg class="size-5 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
                             </svg>              
                         </div>
 
-                        <div class="swiper-button-next absolute bottom-1/4 right-4 z-10 p-2 rounded-full">
-                            <svg class="w-5 h-5 text-gray-100 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <div class="swiper-button-next absolute bottom-1/4 right-4 md:right-2 z-10 p-2 rounded-full">
+                            <svg class="size-5 text-gray-100 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4"/>
                             </svg>              
                         </div>
                     </x-bottom-navigation>
                 @endpersist
-            </main>
+            </div>
         </div>
-
         @livewireScripts
     </body>
 </html>

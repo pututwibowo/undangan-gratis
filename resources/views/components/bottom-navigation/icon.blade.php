@@ -9,7 +9,7 @@
     </svg>
     
     @isset($text)
-        <span class="text-xs font-bold text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">{{ $text }}</span>
+        <span class="text-xs font-bold md:font-normal text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">{{ $text }}</span>
     @endisset
 </button>
 

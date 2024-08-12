@@ -16,7 +16,7 @@
         class="relative"
     >
         <label for="{{ $copyId }}" class="sr-only">Label</label>
-        <input id="{{ $copyId }}" type="text" class="block w-full px-2.5 py-3 text-md font-bold rounded-lg bg-gray-50 border border-gray-300 text-gray-500 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-100 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{ $copyValue }}" disabled readonly>
+        <input id="{{ $copyId }}" type="text" class="block w-full px-2.5 py-3 text-md md:text-sm rounded-lg bg-gray-50 border border-gray-300 text-gray-500 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-100 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{ $copyValue }}" disabled readonly>
         <button
             x-on:click="
                 clipboard.copy();
