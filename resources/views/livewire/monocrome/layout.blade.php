@@ -15,7 +15,7 @@
 
         @livewireStyles
     </head>
-    <body class="font-sans antialiased w-full bg-gray-900 md:mt-2">
+    <body class="font-sans antialiased w-full md:h-svh md:flex md:justify-center md:items-center bg-gray-900">
         <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 md:border-[14px] md:rounded-[2.5rem] md:h-[600px] md:w-[300px]">
             <div class="hidden md:block h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
             <div class="hidden md:block h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
