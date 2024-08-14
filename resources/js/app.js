@@ -1,5 +1,6 @@
 import './bootstrap';
 import 'flowbite';
+import { livewire_hot_reload } from  'virtual:livewire-hot-reload'; 
 
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
@@ -13,3 +14,5 @@ import 'swiper/css/pagination';
 window.Swiper = Swiper;
 window.Navigation = Navigation;
 window.Pagination = Pagination;
+
+livewire_hot_reload();
